@@ -1,39 +1,39 @@
 [gd_scene format=3 uid="uid://d31o43e8v648a"]
 
 [ext_resource type="Script" uid="uid://ba1j3mfut5llq" path="res://player.gd" id="1_4flbx"]
-[ext_resource type="Texture2D" uid="uid://oil70nxfw8uc" path="res://assets/orc1_run_full.png" id="2_onrkg"]
+[ext_resource type="Texture2D" uid="uid://d2obi416af3na" path="res://assets/Character_Walk.png" id="2_onrkg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_i3pqv"]
 atlas = ExtResource("2_onrkg")
-region = Rect2(0, 0, 64, 64)
+region = Rect2(40, 144, 40, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_hqtel"]
 atlas = ExtResource("2_onrkg")
-region = Rect2(256, 0, 64, 64)
+region = Rect2(120, 144, 40, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sweqy"]
 atlas = ExtResource("2_onrkg")
-region = Rect2(0, 128, 64, 64)
+region = Rect2(0, 0, 40, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_2hs0m"]
 atlas = ExtResource("2_onrkg")
-region = Rect2(448, 128, 64, 64)
+region = Rect2(40, 0, 40, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1jxqw"]
 atlas = ExtResource("2_onrkg")
-region = Rect2(0, 192, 64, 64)
+region = Rect2(0, 48, 40, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dw050"]
 atlas = ExtResource("2_onrkg")
-region = Rect2(448, 192, 64, 64)
+region = Rect2(40, 48, 40, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b26j0"]
 atlas = ExtResource("2_onrkg")
-region = Rect2(0, 64, 64, 64)
+region = Rect2(40, 96, 40, 48)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_n7ghd"]
 atlas = ExtResource("2_onrkg")
-region = Rect2(256, 64, 64, 64)
+region = Rect2(120, 96, 40, 48)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_nvl01"]
 animations = [{
@@ -83,18 +83,18 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_onrkg"]
-radius = 21.0
-height = 66.0
+radius = 20.0
+height = 68.0
 
 [node name="Player" type="Area2D" unique_id=149412138]
 script = ExtResource("1_4flbx")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=284520753]
-position = Vector2(-1, 8)
-scale = Vector2(2.1953125, 2.34375)
+position = Vector2(0, -3.0000005)
+scale = Vector2(2.4875, 1.9583333)
 sprite_frames = SubResource("SpriteFrames_nvl01")
-animation = &"walk_down"
-frame_progress = 0.8393681
+animation = &"walk_up"
+frame_progress = 0.18159162
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=272541434]
 position = Vector2(0, -1)
